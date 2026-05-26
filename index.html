@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>دخلي — ماليتك في متناول يدك</title>
+<meta name="description" content="تطبيق دخلي لإدارة المال الشخصي — تتبع الدخل والمصروفات والديون والمحافظ والميزانية مع مساعد ذكاء اصطناعي"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="light" data-lang="ar">
+
+<!-- ───── NAVBAR ───── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">د</div>
+      <span class="logo-text" data-ar="دخلي" data-en="Dakhly" data-fr="Dakhly">دخلي</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features" data-ar="المميزات" data-en="Features" data-fr="Fonctionnalités">المميزات</a>
+      <a href="#screens" data-ar="الشاشات" data-en="Screens" data-fr="Écrans">الشاشات</a>
+      <a href="support.html" data-ar="الدعم" data-en="Support" data-fr="Support">الدعم</a>
+    </div>
+    <div class="nav-actions">
+      <!-- Lang switcher -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang-target="ar">ع</button>
+        <button class="lang-btn" data-lang-target="en">EN</button>
+        <button class="lang-btn" data-lang-target="fr">FR</button>
+      </div>
+      <!-- Dark/Light toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+      <button class="nav-cta" data-ar="تحميل التطبيق" data-en="Download App" data-fr="Télécharger">تحميل التطبيق</button>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features" data-ar="المميزات" data-en="Features" data-fr="Fonctionnalités">المميزات</a>
+    <a href="#screens" data-ar="الشاشات" data-en="Screens" data-fr="Écrans">الشاشات</a>
+    <a href="#pricing" data-ar="الأسعار" data-en="Pricing" data-fr="Tarifs">الأسعار</a>
+    <a href="support.html" data-ar="الدعم" data-en="Support" data-fr="Support">الدعم</a>
+  </div>
+</nav>
+
+<!-- ───── HERO ───── -->
+<section class="hero" id="hero">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+  <div class="hero-bg-orb orb3"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge animate-fade-up">
+        <span class="badge-dot"></span>
+        <span data-ar="✨ جديد — مساعد ذكاء اصطناعي متكامل" data-en="✨ New — Built-in AI Assistant" data-fr="✨ Nouveau — Assistant IA intégré">✨ جديد — مساعد ذكاء اصطناعي متكامل</span>
+      </div>
+      <h1 class="hero-title animate-fade-up delay-1">
+        <span data-ar="ماليتك في" data-en="Your finances" data-fr="Vos finances">ماليتك في</span>
+        <span class="gradient-text" data-ar="متناول يدك" data-en="at your fingertips" data-fr="à portée de main">متناول يدك</span>
+      </h1>
+      <p class="hero-desc animate-fade-up delay-2" data-ar="تطبيق دخلي يساعدك على تتبع دخلك ومصروفاتك وديونك وإدارة محافظك وميزانيتك بذكاء — مع إضافة المعاملات بالصوت وكشف الرسائل تلقائياً." data-en="Dakhly helps you track income, expenses, and debts, manage wallets and budgets intelligently — with voice transaction entry and automatic SMS detection." data-fr="Dakhly vous aide à suivre revenus, dépenses et dettes, gérer vos portefeuilles et budgets intelligemment — avec saisie vocale et détection SMS automatique.">تطبيق دخلي يساعدك على تتبع دخلك ومصروفاتك وديونك وإدارة محافظك وميزانيتك بذكاء — مع إضافة المعاملات بالصوت وكشف الرسائل تلقائياً.</p>
+      <div class="hero-actions animate-fade-up delay-3">
+        <a href="#" class="btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18.5v-13A1.5 1.5 0 0 1 5.03 4.1l9.5 6.5a1.5 1.5 0 0 1 0 2.8l-9.5 6.5A1.5 1.5 0 0 1 3 18.5z"/></svg>
+          <span data-ar="تحميل من Google Play" data-en="Get on Google Play" data-fr="Google Play">تحميل من Google Play</span>
+        </a>
+        <a href="#screens" class="btn-ghost">
+          <span data-ar="استعراض التطبيق" data-en="View App" data-fr="Voir l'app">استعراض التطبيق</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats animate-fade-up delay-4">
+        <div class="hero-stat">
+          <span class="stat-num">+٥٠٠٠</span>
+          <span class="stat-lbl" data-ar="مستخدم نشط" data-en="Active Users" data-fr="Utilisateurs">مستخدم نشط</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">٤.٨★</span>
+          <span class="stat-lbl" data-ar="تقييم المتجر" data-en="Store Rating" data-fr="Note du store">تقييم المتجر</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">٣٨</span>
+          <span class="stat-lbl" data-ar="شاشة متكاملة" data-en="Complete Screens" data-fr="Écrans complets">شاشة متكاملة</span>
+        </div>
+      </div>
+    </div>
+    <!-- Phone mockup -->
+    <div class="hero-phone animate-float">
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="mock-statusbar">
+            <span>٩:٤١</span>
+            <div style="display:flex;gap:4px;align-items:center;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.56 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M23 13v-2a4 4 0 0 0 0 2z"/></svg>
+            </div>
+          </div>
+          <!-- Mini dashboard -->
+          <div class="mock-topbar">
+            <div class="mock-avatar">ي</div>
+            <div>
+              <div class="mock-greeting" data-ar="مرحباً، يحيى" data-en="Hi, Yahya" data-fr="Bonjour, Yahya">مرحباً، يحيى</div>
+              <div class="mock-date" data-ar="الأحد، ٢٥ مايو" data-en="Sun, May 25" data-fr="Dim, 25 Mai">الأحد، ٢٥ مايو</div>
+            </div>
+            <div style="margin-right:auto;display:flex;gap:6px;">
+              <div class="mock-icon-btn">🔔</div>
+              <div class="mock-icon-btn">🤖</div>
+            </div>
+          </div>
+          <div class="mock-hero-card">
+            <div class="mock-balance-lbl" data-ar="الرصيد الإجمالي" data-en="Total Balance" data-fr="Solde total">الرصيد الإجمالي</div>
+            <div class="mock-balance">١٢,٤٥٠.٠٠ ج.م</div>
+            <div class="mock-chips-row">
+              <div class="mock-chip green">
+                <div class="mock-chip-lbl" data-ar="دخل" data-en="Income" data-fr="Revenus">دخل</div>
+                <div class="mock-chip-val">+٨,٢٠٠</div>
+              </div>
+              <div class="mock-chip red">
+                <div class="mock-chip-lbl" data-ar="مصروف" data-en="Expense" data-fr="Dépenses">مصروف</div>
+                <div class="mock-chip-val">-٣,٧٥٠</div>
+              </div>
+              <div class="mock-chip gold">
+                <div class="mock-chip-lbl" data-ar="ديون" data-en="Debts" data-fr="Dettes">ديون</div>
+                <div class="mock-chip-val">١,٥٠٠</div>
+              </div>
+            </div>
+          </div>
+          <!-- TX list -->
+          <div class="mock-section-title" data-ar="آخر المعاملات" data-en="Recent Transactions" data-fr="Dernières opérations">آخر المعاملات</div>
+          <div class="mock-card">
+            <div class="mock-tx">
+              <div class="mock-tx-icon" style="background:#FEF9C3;">🛒</div>
+              <div class="mock-tx-info">
+                <div class="mock-tx-name" data-ar="تسوق" data-en="Shopping" data-fr="Courses">تسوق</div>
+                <div class="mock-tx-date" data-ar="اليوم" data-en="Today" data-fr="Aujourd'hui">اليوم</div>
+              </div>
+              <div class="mock-tx-amt red">-٢٥٠</div>
+            </div>
+            <div class="mock-tx">
+              <div class="mock-tx-icon" style="background:#DCFCE7;">💼</div>
+              <div class="mock-tx-info">
+                <div class="mock-tx-name" data-ar="راتب" data-en="Salary" data-fr="Salaire">راتب</div>
+                <div class="mock-tx-date" data-ar="أمس" data-en="Yesterday" data-fr="Hier">أمس</div>
+              </div>
+              <div class="mock-tx-amt green">+٨,٢٠٠</div>
+            </div>
+            <div class="mock-tx" style="border-bottom:none;">
+              <div class="mock-tx-icon" style="background:#EDE9FE;">🍕</div>
+              <div class="mock-tx-info">
+                <div class="mock-tx-name" data-ar="مطعم" data-en="Restaurant" data-fr="Restaurant">مطعم</div>
+                <div class="mock-tx-date" data-ar="٢٣ مايو" data-en="May 23" data-fr="23 Mai">٢٣ مايو</div>
+              </div>
+              <div class="mock-tx-amt red">-١٨٠</div>
+            </div>
+          </div>
+          <!-- Bottom nav -->
+          <div class="mock-bottom-nav">
+            <div class="mock-nav-item active">
+              <div class="mock-nav-icon">🏠</div>
+              <div class="mock-nav-lbl" data-ar="رئيسية" data-en="Home" data-fr="Accueil">رئيسية</div>
+            </div>
+            <div class="mock-nav-item">
+              <div class="mock-nav-icon">👛</div>
+              <div class="mock-nav-lbl" data-ar="محافظ" data-en="Wallets" data-fr="Portefeuilles">محافظ</div>
+            </div>
+            <div class="mock-fab">+</div>
+            <div class="mock-nav-item">
+              <div class="mock-nav-icon">📊</div>
+              <div class="mock-nav-lbl" data-ar="ميزانية" data-en="Budget" data-fr="Budget">ميزانية</div>
+            </div>
+            <div class="mock-nav-item">
+              <div class="mock-nav-icon">⚙️</div>
+              <div class="mock-nav-lbl" data-ar="المزيد" data-en="More" data-fr="Plus">المزيد</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Floating cards -->
+      <div class="float-card float-card-1 animate-float-2">
+        <span>🎙️</span>
+        <span data-ar="إضافة صوتية" data-en="Voice Add" data-fr="Ajout vocal">إضافة صوتية</span>
+      </div>
+      <div class="float-card float-card-2 animate-float-3">
+        <span>🤖</span>
+        <span data-ar="مساعد AI" data-en="AI Assistant" data-fr="Assistant IA">مساعد AI</span>
+      </div>
+      <div class="float-card float-card-3 animate-float-2">
+        <span>📱</span>
+        <span data-ar="كشف SMS" data-en="SMS Detect" data-fr="Détect SMS">كشف SMS</span>
+      </div>
+    </div>
+  </div>
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-dot"></div>
+  </div>
+</section>
+
+<!-- ───── TRUSTED BY ───── -->
+<section class="trust-bar">
+  <div class="container">
+    <p class="trust-lbl" data-ar="يثق به مستخدمون من" data-en="Trusted by users in" data-fr="Utilisé dans">يثق به مستخدمون من</p>
+    <div class="trust-flags">
+      <span>🇪🇬 <span data-ar="مصر" data-en="Egypt" data-fr="Égypte">مصر</span></span>
+      <span>🇸🇦 <span data-ar="السعودية" data-en="Saudi Arabia" data-fr="Arabie Saoudite">السعودية</span></span>
+      <span>🇦🇪 <span data-ar="الإمارات" data-en="UAE" data-fr="Émirats">الإمارات</span></span>
+      <span>🇲🇦 <span data-ar="المغرب" data-en="Morocco" data-fr="Maroc">المغرب</span></span>
+      <span>🇩🇿 <span data-ar="الجزائر" data-en="Algeria" data-fr="Algérie">الجزائر</span></span>
+      <span>🇹🇳 <span data-ar="تونس" data-en="Tunisia" data-fr="Tunisie">تونس</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ───── FEATURES ───── -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge" data-ar="المميزات" data-en="Features" data-fr="Fonctionnalités">المميزات</div>
+      <h2 class="section-title">
+        <span data-ar="كل ما تحتاجه لـ" data-en="Everything you need to" data-fr="Tout ce qu'il vous faut pour">كل ما تحتاجه لـ</span>
+        <span class="gradient-text" data-ar="إدارة مالك" data-en="manage your money" data-fr="gérer votre argent">إدارة مالك</span>
+      </h2>
+      <p class="section-desc" data-ar="٣٨ شاشة متكاملة تغطي كل جانب من جوانب حياتك المالية" data-en="38 complete screens covering every aspect of your financial life" data-fr="38 écrans complets couvrant chaque aspect de votre vie financière">٣٨ شاشة متكاملة تغطي كل جانب من جوانب حياتك المالية</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card feat-large animate-on-scroll">
+        <div class="feat-icon-wrap teal">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+        </div>
+        <h3 data-ar="لوحة تحكم ذكية" data-en="Smart Dashboard" data-fr="Tableau de bord intelligent">لوحة تحكم ذكية</h3>
+        <p data-ar="نظرة شاملة على رصيدك الإجمالي، الدخل، المصروفات والديون — مع رسوم بيانية تفاعلية وإحصاءات فورية." data-en="A comprehensive view of your total balance, income, expenses and debts — with interactive charts and instant stats." data-fr="Vue complète de votre solde, revenus, dépenses et dettes — avec graphiques interactifs et statistiques instantanées.">نظرة شاملة على رصيدك الإجمالي، الدخل، المصروفات والديون — مع رسوم بيانية تفاعلية وإحصاءات فورية.</p>
+        <div class="feat-tags">
+          <span data-ar="رسوم بيانية" data-en="Charts" data-fr="Graphiques">رسوم بيانية</span>
+          <span data-ar="إحصاءات" data-en="Statistics" data-fr="Statistiques">إحصاءات</span>
+          <span data-ar="نماذج سريعة" data-en="Quick Templates" data-fr="Modèles rapides">نماذج سريعة</span>
+        </div>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-1">
+        <div class="feat-icon-wrap gold">🤖</div>
+        <h3 data-ar="مساعد AI" data-en="AI Assistant" data-fr="Assistant IA">مساعد AI</h3>
+        <p data-ar="تحليل ذكي لأنماط إنفاقك ونصائح مالية شخصية." data-en="Smart analysis of your spending patterns and personalized financial tips." data-fr="Analyse intelligente de vos habitudes et conseils financiers personnalisés.">تحليل ذكي لأنماط إنفاقك ونصائح مالية شخصية.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-2">
+        <div class="feat-icon-wrap teal">🎙️</div>
+        <h3 data-ar="إضافة صوتية" data-en="Voice Add" data-fr="Ajout vocal">إضافة صوتية</h3>
+        <p data-ar="سجّل معاملتك بصوتك — يتعرف عليها ويضيفها تلقائياً." data-en="Record your transaction by voice — recognized and added automatically." data-fr="Enregistrez votre transaction vocalement — reconnue et ajoutée automatiquement.">سجّل معاملتك بصوتك — يتعرف عليها ويضيفها تلقائياً.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-1">
+        <div class="feat-icon-wrap green">📱</div>
+        <h3 data-ar="كشف SMS التلقائي" data-en="Auto SMS Detection" data-fr="Détection SMS auto">كشف SMS التلقائي</h3>
+        <p data-ar="يقرأ رسائل البنك تلقائياً ويقترح إضافة المعاملة بنقرة واحدة." data-en="Automatically reads bank SMS and suggests adding transactions with one tap." data-fr="Lit automatiquement les SMS bancaires et suggère l'ajout en un clic.">يقرأ رسائل البنك تلقائياً ويقترح إضافة المعاملة بنقرة واحدة.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-2">
+        <div class="feat-icon-wrap navy">👛</div>
+        <h3 data-ar="إدارة المحافظ" data-en="Wallet Management" data-fr="Gestion des portefeuilles">إدارة المحافظ</h3>
+        <p data-ar="محافظ متعددة بعملات مختلفة مع تحويل فوري بينها." data-en="Multiple wallets with different currencies and instant transfers between them." data-fr="Portefeuilles multiples en différentes devises avec transferts instantanés.">محافظ متعددة بعملات مختلفة مع تحويل فوري بينها.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll">
+        <div class="feat-icon-wrap teal">📊</div>
+        <h3 data-ar="الميزانية الذكية" data-en="Smart Budget" data-fr="Budget intelligent">الميزانية الذكية</h3>
+        <p data-ar="ضع ميزانيات لفئات الإنفاق وتابع التقدم بشكل مرئي." data-en="Set budgets for spending categories and track progress visually." data-fr="Définissez des budgets par catégorie et suivez visuellement vos progrès.">ضع ميزانيات لفئات الإنفاق وتابع التقدم بشكل مرئي.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-1">
+        <div class="feat-icon-wrap gold">🔁</div>
+        <h3 data-ar="المعاملات المتكررة" data-en="Recurring Transactions" data-fr="Transactions récurrentes">المعاملات المتكررة</h3>
+        <p data-ar="جدولة المدفوعات المنتظمة (إيجار، اشتراكات، أقساط) بشكل تلقائي." data-en="Schedule regular payments (rent, subscriptions, installments) automatically." data-fr="Planifiez les paiements réguliers (loyer, abonnements, mensualités) automatiquement.">جدولة المدفوعات المنتظمة (إيجار، اشتراكات، أقساط) بشكل تلقائي.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll delay-2">
+        <div class="feat-icon-wrap navy">🔒</div>
+        <h3 data-ar="الأمان والخصوصية" data-en="Security & Privacy" data-fr="Sécurité et confidentialité">الأمان والخصوصية</h3>
+        <p data-ar="بصمة الإصبع أو رمز PIN لحماية بياناتك المالية." data-en="Fingerprint or PIN to protect your financial data." data-fr="Empreinte digitale ou PIN pour protéger vos données financières.">بصمة الإصبع أو رمز PIN لحماية بياناتك المالية.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───── SCREENS CAROUSEL ───── -->
+<section class="screens-section" id="screens">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge" data-ar="معاينة التطبيق" data-en="App Preview" data-fr="Aperçu de l'app">معاينة التطبيق</div>
+      <h2 class="section-title">
+        <span data-ar="صُمِّم بعناية لتجربة" data-en="Crafted for an" data-fr="Conçu pour une">صُمِّم بعناية لتجربة</span>
+        <span class="gradient-text" data-ar="استثنائية" data-en="exceptional experience" data-fr="expérience exceptionnelle">استثنائية</span>
+      </h2>
+    </div>
+    <div class="screens-track-wrap">
+      <div class="screens-track" id="screensTrack">
+        <!-- Screen 1 -->
+        <div class="screen-card">
+          <div class="screen-phone">
+            <div class="sp-notch"></div>
+            <div style="background:linear-gradient(135deg,#0F766E,#0a2540,#0A1628);height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 20px;">
+              <div style="width:70px;height:70px;border-radius:50%;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:800;color:white;margin-bottom:16px;">د</div>
+              <div style="font-size:26px;font-weight:800;color:white;margin-bottom:6px;" data-ar="دخلي" data-en="Dakhly" data-fr="Dakhly">دخلي</div>
+              <div style="font-size:12px;color:rgba(255,255,255,.7);text-align:center;" data-ar="ماليتك في متناول يدك" data-en="Your finances at your fingertips" data-fr="Vos finances à portée de main">ماليتك في متناول يدك</div>
+              <div style="margin-top:30px;width:120px;height:4px;background:rgba(255,255,255,.2);border-radius:2px;overflow:hidden;">
+                <div style="width:60%;height:100%;background:#14B8A6;border-radius:2px;animation:loadbar 2s ease-in-out infinite;"></div>
+              </div>
+            </div>
+          </div>
+          <p class="screen-label" data-ar="شاشة البداية" data-en="Splash Screen" data-fr="Écran de démarrage">شاشة البداية</p>
+        </div>
+
+        <!-- Screen 2: Onboarding -->
+        <div class="screen-card">
+          <div class="screen-phone">
+            <div class="sp-notch"></div>
+            <div style="background:var(--pb);height:100%;display:flex;flex-direction:column;padding:20px 16px 16px;">
+              <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+                <div style="font-size:52px;margin-bottom:16px;">💰</div>
+                <div style="font-size:16px;font-weight:700;color:var(--pt1);margin-bottom:8px;" data-ar="تتبع كل جنيه" data-en="Track Every Penny" data-fr="Suivez chaque centime">تتبع كل جنيه</div>
+                <div style="font-size:11px;color:var(--pt2);line-height:1.6;padding:0 8px;" data-ar="سجّل دخلك ومصروفاتك بسهولة وعرّف أين تذهب أموالك" data-en="Easily record income and expenses and know where your money goes" data-fr="Enregistrez facilement revenus et dépenses">سجّل دخلك ومصروفاتك بسهولة وعرّف أين تذهب أموالك</div>
+              </div>
+              <div style="display:flex;gap:6px;justify-content:center;margin-bottom:16px;">
+                <div style="width:20px;height:6px;border-radius:3px;background:#0F766E;"></div>
+                <div style="width:6px;height:6px;border-radius:3px;background:var(--pbr2);"></div>
+                <div style="width:6px;height:6px;border-radius:3px;background:var(--pbr2);"></div>
+              </div>
+              <div style="background:linear-gradient(135deg,#0F766E,#14B8A6);border-radius:14px;padding:12px;text-align:center;color:white;font-size:13px;font-weight:600;" data-ar="التالي" data-en="Next" data-fr="Suivant">التالي</div>
+            </div>
+          </div>
+          <p class="screen-label" data-ar="الإعداد الأولي" data-en="Onboarding" data-fr="Initiation">الإعداد الأولي</p>
+        </div>
+
+        <!-- Screen 3: Dashboard -->
+        <div class="screen-card">
+          <div class="screen-phone">
+            <div class="sp-notch"></div>
+            <div style="background:var(--pb);height:100%;display:flex;flex-direction:column;overflow:hidden;">
+              <div style="padding:8px 12px 0;display:flex;align-items:center;gap:8px;">
+                <div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#0F766E,#14B8A6);display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:700;">ي</div>
+                <span style="font-size:13px;font-weight:700;color:#0F766E;" data-ar="دخلي" data-en="Dakhly" data-fr="Dakhly">دخلي</span>
+                <div style="margin-right:auto;display:flex;gap:5px;">
+                  <div style="width:26px;height:26px;border-radius:50%;background:rgba(15,118,110,.1);display:flex;align-items:center;justify-content:center;font-size:11px;">🔔</div>
+                  <div style="width:26px;height:26px;border-radius:50%;background:rgba(15,118,110,.1);display:flex;align-items:center;justify-content:center;font-size:11px;">🤖</div>
+                </div>
+              </div>
+              <div style="margin:8px 10px 0;background:linear-gradient(135deg,#0F766E,#0a2540,#0A1628);border-radius:14px;padding:12px;color:white;">
+                <div style="font-size:9px;opacity:.8;" data-ar="الرصيد الإجمالي" data-en="Total Balance" data-fr="Solde total">الرصيد الإجمالي</div>
+                <div style="font-size:18px;font-weight:700;margin:3px 0;">١٢,٤٥٠.٠٠</div>
+                <div style="display:flex;gap:8px;margin-top:6px;">
+                  <div style="background:rgba(255,255,255,.12);border-radius:8px;padding:5px 8px;font-size:9px;">↑ <span style="color:#4ade80;">٨,٢٠٠</span></div>
+                  <div style="background:rgba(255,255,255,.12);border-radius:8px;padding:5px 8px;font-size:9px;">↓ <span style="color:#f87171;">٣,٧٥٠</span></div>
+                </div>
+              </div>
+              <div style="flex:1;padding:8px 10px 0;overflow:hidden;">
+                <div style="font-size:10px;font-weight:600;color:var(--pt1);margin-bottom:6px;" data-ar="اليوم" data-en="Today" data-fr="Aujourd'hui">اليوم</div>
+                <div style="background:var(--ps);border-radius:12px;box-shadow:0 2px 10px rgba(15,118,110,.08);padding:8px;">
+                  <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--pbr);">
+                    <div style="width:28px;height:28px;border-radius:8px;background:#FEF9C3;display:flex;align-items:center;justify-content:center;font-size:13px;">🛒</div>
+                    <div style="flex:1;"><div style="font-size:10px;font-weight:600;color:var(--pt1);" data-ar="تسوق" data-en="Shopping" data-fr="Courses">تسوق</div><div style="font-size:9px;color:#94A3B8;">الشبكة</div></div>
+                    <div style="font-size:11px;font-weight:700;color:#DC2626;">-٢٥٠</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:8px;padding:6px 0;">
+                    <div style="width:28px;height:28px;border-radius:8px;background:#DCFCE7;display:flex;align-items:center;justify-content:center;font-size:13px;">💼</div>
+                    <div style="flex:1;"><div style="font-size:10px;font-weight:600;color:var(--pt1);" data-ar="راتب" data-en="Salary" data-fr="Salaire">راتب</div><div style="font-size:9px;color:#94A3B8;" data-ar="التحويل" data-en="Transfer" data-fr="Virement">التحويل</div></div>
+                    <div style="font-size:11px;font-weight:700;color:#16A34A;">+٨,٢٠٠</div>
+                  </div>
+                </div>
+              </div>
+              <div style="margin:6px 10px;background:var(--ps);border-radius:18px;padding:6px 10px;box-shadow:0 -4px 20px rgba(15,118,110,.1);display:flex;align-items:center;justify-content:space-around;">
+                <div style="text-align:center;font-size:9px;color:#0F766E;">🏠</div>
+                <div style="text-align:center;font-size:9px;color:#94A3B8;">👛</div>
+                <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#0F766E,#14B8A6);display:flex;align-items:center;justify-content:center;color:white;font-size:14px;font-weight:300;">+</div>
+                <div style="text-align:center;font-size:9px;color:#94A3B8;">📊</div>
+                <div style="text-align:center;font-size:9px;color:#94A3B8;">⚙️</div>
+              </div>
+            </div>
+          </div>
+          <p class="screen-label" data-ar="الشاشة الرئيسية" data-en="Dashboard" data-fr="Tableau de bord">الشاشة الرئيسية</p>
+        </div>
+
+        <!-- Screen 4: Add Transaction -->
+        <div class="screen-card">
+          <div class="screen-phone">
+            <div class="sp-notch"></div>
+            <div style="background:var(--pb);height:100%;display:flex;flex-direction:column;padding:16px;">
+              <div style="font-size:14px;font-weight:700;color:var(--pt1);margin-bottom:14px;text-align:center;" data-ar="إضافة معاملة" data-en="Add Transaction" data-fr="Ajouter une opération">إضافة معاملة</div>
+              <div style="display:flex;gap:6px;margin-bottom:16px;">
+                <div style="flex:1;background:linear-gradient(135deg,#0F766E,#14B8A6);border-radius:10px;padding:8px;text-align:center;color:white;font-size:11px;font-weight:600;" data-ar="مصروف" data-en="Expense" data-fr="Dépense">مصروف</div>
+                <div style="flex:1;background:var(--ps2);border-radius:10px;padding:8px;text-align:center;color:var(--pt2);font-size:11px;" data-ar="دخل" data-en="Income" data-fr="Revenu">دخل</div>
+                <div style="flex:1;background:var(--ps2);border-radius:10px;padding:8px;text-align:center;color:var(--pt2);font-size:11px;" data-ar="دين" data-en="Debt" data-fr="Dette">دين</div>
+              </div>
+              <div style="background:var(--ps);border-radius:16px;box-shadow:0 4px 20px rgba(15,118,110,.09);padding:20px;text-align:center;margin-bottom:14px;">
+                <div style="font-size:32px;font-weight:700;color:var(--pt1);">٢٥٠.٠٠</div>
+                <div style="font-size:11px;color:#94A3B8;" data-ar="جنيه مصري" data-en="Egyptian Pound" data-fr="Livre égyptienne">جنيه مصري</div>
+              </div>
+              <div style="background:var(--ps);border-radius:12px;box-shadow:0 2px 10px rgba(15,118,110,.06);padding:10px 12px;margin-bottom:8px;display:flex;align-items:center;gap:8px;">
+                <span style="font-size:16px;">🛒</span>
+                <span style="font-size:11px;color:var(--pt1);" data-ar="تسوق" data-en="Shopping" data-fr="Courses">تسوق</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" style="margin-right:auto;transform:rotate(180deg);"><path d="M9 18l6-6-6-6"/></svg>
+              </div>
+              <div style="background:var(--ps);border-radius:12px;box-shadow:0 2px 10px rgba(15,118,110,.06);padding:10px 12px;margin-bottom:14px;display:flex;align-items:center;gap:8px;">
+                <span style="font-size:16px;">👛</span>
+                <span style="font-size:11px;color:var(--pt1);" data-ar="المحفظة الرئيسية" data-en="Main Wallet" data-fr="Portefeuille principal">المحفظة الرئيسية</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" style="margin-right:auto;transform:rotate(180deg);"><path d="M9 18l6-6-6-6"/></svg>
+              </div>
+              <div style="background:linear-gradient(135deg,#0F766E,#14B8A6);border-radius:14px;padding:12px;text-align:center;color:white;font-size:13px;font-weight:600;margin-top:auto;" data-ar="حفظ المعاملة" data-en="Save Transaction" data-fr="Enregistrer">حفظ المعاملة</div>
+            </div>
+          </div>
+          <p class="screen-label" data-ar="إضافة معاملة" data-en="Add Transaction" data-fr="Ajouter">إضافة معاملة</p>
+        </div>
+
+        <!-- Screen 5: Budget -->
+        <div class="screen-card">
+          <div class="screen-phone">
+            <div class="sp-notch"></div>
+            <div style="background:var(--pb);height:100%;display:flex;flex-direction:column;overflow:hidden;">
+              <div style="padding:12px 14px;font-size:14px;font-weight:700;color:var(--pt1);" data-ar="الميزانية" data-en="Budget" data-fr="Budget">الميزانية</div>
+              <div style="margin:0 12px;background:linear-gradient(135deg,#0F766E,#0a2540);border-radius:14px;padding:14px;color:white;margin-bottom:10px;">
+                <div style="font-size:9px;opacity:.8;" data-ar="الميزانية الشهرية" data-en="Monthly Budget" data-fr="Budget mensuel">الميزانية الشهرية</div>
+                <div style="font-size:18px;font-weight:700;margin:3px 0;">٥,٠٠٠.٠٠</div>
+                <div style="background:rgba(255,255,255,.2);border-radius:4px;height:6px;margin-top:8px;overflow:hidden;">
+                  <div style="width:68%;height:100%;background:#14B8A6;border-radius:4px;"></div>
+                </div>
+                <div style="display:flex;justify-content:space-between;margin-top:4px;">
+                  <span style="font-size:9px;opacity:.7;" data-ar="تم الإنفاق: ٣,٤٠٠" data-en="Spent: 3,400" data-fr="Dépensé: 3 400">تم الإنفاق: ٣,٤٠٠</span>
+                  <span style="font-size:9px;opacity:.7;">٦٨%</span>
+                </div>
+              </div>
+              <div style="flex:1;overflow:hidden;padding:0 12px;">
+                <div style="background:var(--ps);border-radius:14px;box-shadow:0 2px 10px rgba(15,118,110,.08);padding:10px;">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+                    <div style="width:28px;height:28px;border-radius:8px;background:#FEF9C3;display:flex;align-items:center;justify-content:center;font-size:13px;">🍕</div>
+                    <div style="flex:1;">
+                      <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+                        <span style="font-size:10px;font-weight:600;color:var(--pt1);" data-ar="مطاعم" data-en="Restaurants" data-fr="Restaurants">مطاعم</span>
+                        <span style="font-size:10px;color:var(--pt2);">٨٠٠ / ١,٢٠٠</span>
+                      </div>
+                      <div style="background:var(--pbr);border-radius:3px;height:5px;overflow:hidden;">
+                        <div style="width:67%;height:100%;background:#0F766E;border-radius:3px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <div style="width:28px;height:28px;border-radius:8px;background:#DBEAFE;display:flex;align-items:center;justify-content:center;font-size:13px;">🚗</div>
+                    <div style="flex:1;">
+                      <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+                        <span style="font-size:10px;font-weight:600;color:var(--pt1);" data-ar="مواصلات" data-en="Transport" data-fr="Transport">مواصلات</span>
+                        <span style="font-size:10px;color:var(--pt2);">٣٥٠ / ٨٠٠</span>
+                      </div>
+                      <div style="background:var(--pbr);border-radius:3px;height:5px;overflow:hidden;">
+                        <div style="width:44%;height:100%;background:#14B8A6;border-radius:3px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="screen-label" data-ar="الميزانية" data-en="Budget" data-fr="Budget">الميزانية</p>
+        </div>
+
+        <!-- Screen 6: AI -->
+        <div class="screen-card">
+          <div class="screen-phone">
+            <div class="sp-notch"></div>
+            <div style="background:var(--pb);height:100%;display:flex;flex-direction:column;">
+              <div style="padding:12px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--pbr2);">
+                <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#0F766E,#14B8A6);display:flex;align-items:center;justify-content:center;font-size:16px;">🤖</div>
+                <div>
+                  <div style="font-size:12px;font-weight:700;color:var(--pt1);" data-ar="مساعد دخلي" data-en="Dakhly AI" data-fr="IA Dakhly">مساعد دخلي</div>
+                  <div style="font-size:9px;color:#16A34A;" data-ar="متصل الآن" data-en="Online" data-fr="En ligne">متصل الآن</div>
+                </div>
+              </div>
+              <div style="flex:1;padding:12px;display:flex;flex-direction:column;gap:10px;overflow:hidden;">
+                <div style="background:linear-gradient(135deg,#0F766E,#14B8A6);border-radius:14px 14px 4px 14px;padding:10px 12px;color:white;font-size:10px;line-height:1.6;align-self:flex-start;max-width:80%;" data-ar="مرحباً! أنا مساعدك المالي الذكي. كيف يمكنني مساعدتك اليوم؟" data-en="Hello! I'm your smart financial assistant. How can I help you today?" data-fr="Bonjour! Je suis votre assistant financier. Comment puis-je vous aider?">مرحباً! أنا مساعدك المالي الذكي. كيف يمكنني مساعدتك اليوم؟</div>
+                <div style="background:var(--ps);border-radius:14px 14px 14px 4px;padding:10px 12px;color:var(--pt1);font-size:10px;line-height:1.6;align-self:flex-end;max-width:80%;box-shadow:0 2px 8px rgba(15,118,110,.08);" data-ar="ما هي أكثر فئة أنفق عليها هذا الشهر؟" data-en="What category do I spend the most on this month?" data-fr="Quelle catégorie dépensé-je le plus ce mois?">ما هي أكثر فئة أنفق عليها هذا الشهر؟</div>
+                <div style="background:linear-gradient(135deg,#0F766E,#14B8A6);border-radius:14px 14px 4px 14px;padding:10px 12px;color:white;font-size:10px;line-height:1.6;align-self:flex-start;max-width:80%;" data-ar="أكثر فئة إنفاق هي المطاعم بـ ٨٠٠ جنيه، تليها المواصلات بـ ٣٥٠ جنيه." data-en="Your top spending is Restaurants at 800 EGP, followed by Transport at 350 EGP." data-fr="Votre dépense principale est la restauration à 800 EGP, suivie du transport à 350 EGP.">أكثر فئة إنفاق هي المطاعم بـ ٨٠٠ جنيه، تليها المواصلات بـ ٣٥٠ جنيه.</div>
+              </div>
+              <div style="padding:10px 12px;display:flex;gap:8px;align-items:center;border-top:1px solid var(--pbr2);">
+                <div style="flex:1;background:var(--ps2);border-radius:20px;padding:8px 12px;font-size:10px;color:#94A3B8;" data-ar="اسألني أي شيء..." data-en="Ask me anything..." data-fr="Posez-moi une question...">اسألني أي شيء...</div>
+                <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#0F766E,#14B8A6);display:flex;align-items:center;justify-content:center;color:white;font-size:12px;">↑</div>
+              </div>
+            </div>
+          </div>
+          <p class="screen-label" data-ar="مساعد AI" data-en="AI Assistant" data-fr="Assistant IA">مساعد AI</p>
+        </div>
+      </div>
+      <button class="track-btn track-prev" id="trackPrev">‹</button>
+      <button class="track-btn track-next" id="trackNext">›</button>
+    </div>
+    <div class="screens-dots" id="screensDots"></div>
+  </div>
+</section>
+
+<!-- ───── HOW IT WORKS ───── -->
+<section class="how-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge" data-ar="كيف يعمل" data-en="How It Works" data-fr="Comment ça marche">كيف يعمل</div>
+      <h2 class="section-title">
+        <span data-ar="ابدأ في" data-en="Start in" data-fr="Commencez en">ابدأ في</span>
+        <span class="gradient-text" data-ar="٣ خطوات" data-en="3 steps" data-fr="3 étapes">٣ خطوات</span>
+      </h2>
+    </div>
+    <div class="steps-row">
+      <div class="step-card animate-on-scroll">
+        <div class="step-num">١</div>
+        <div class="step-icon">📲</div>
+        <h3 data-ar="حمّل التطبيق" data-en="Download the App" data-fr="Téléchargez l'app">حمّل التطبيق</h3>
+        <p data-ar="متاح مجاناً على Android مع نسخة Pro اختيارية" data-en="Free on Android with optional Pro version" data-fr="Gratuit sur Android avec version Pro optionnelle">متاح مجاناً على Android مع نسخة Pro اختيارية</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card animate-on-scroll delay-1">
+        <div class="step-num">٢</div>
+        <div class="step-icon">💳</div>
+        <h3 data-ar="أضف محافظك" data-en="Add Your Wallets" data-fr="Ajoutez vos portefeuilles">أضف محافظك</h3>
+        <p data-ar="حدد محافظك ورصيدك الأولي وعملاتك المفضلة" data-en="Set up your wallets, opening balance and preferred currencies" data-fr="Configurez portefeuilles, solde initial et devises">حدد محافظك ورصيدك الأولي وعملاتك المفضلة</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card animate-on-scroll delay-2">
+        <div class="step-num">٣</div>
+        <div class="step-icon">📊</div>
+        <h3 data-ar="تابع أموالك" data-en="Track Your Money" data-fr="Suivez votre argent">تابع أموالك</h3>
+        <p data-ar="سجّل معاملاتك وشاهد تقاريرك الذكية تتشكل لحظة بلحظة" data-en="Log transactions and watch smart reports build in real time" data-fr="Enregistrez vos transactions et regardez les rapports se former">سجّل معاملاتك وشاهد تقاريرك الذكية تتشكل لحظة بلحظة</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── TESTIMONIALS ───── -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge" data-ar="آراء المستخدمين" data-en="User Reviews" data-fr="Avis des utilisateurs">آراء المستخدمين</div>
+      <h2 class="section-title">
+        <span data-ar="ماذا يقول" data-en="What our" data-fr="Ce que disent">ماذا يقول</span>
+        <span class="gradient-text" data-ar="مستخدمونا" data-en="users say" data-fr="nos utilisateurs">مستخدمونا</span>
+      </h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card animate-on-scroll">
+        <div class="testi-stars">★★★★★</div>
+        <p data-ar="أخيراً تطبيق عربي للميزانية يفهم طريقة تفكيري! ميزة كشف الرسائل وفّرت عليّ الكثير من الوقت." data-en="Finally an Arabic budgeting app that understands my mindset! The SMS detection feature saved me so much time." data-fr="Enfin une app de budget arabe qui comprend ma façon de penser! La détection SMS m'a économisé beaucoup de temps.">أخيراً تطبيق عربي للميزانية يفهم طريقة تفكيري! ميزة كشف الرسائل وفّرت عليّ الكثير من الوقت.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#0F766E,#14B8A6);">أ</div>
+          <div>
+            <div class="testi-name" data-ar="أحمد محمد" data-en="Ahmed Mohamed" data-fr="Ahmed Mohamed">أحمد محمد</div>
+            <div class="testi-role" data-ar="مهندس برمجيات — القاهرة" data-en="Software Engineer — Cairo" data-fr="Ingénieur logiciel — Caire">مهندس برمجيات — القاهرة</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card animate-on-scroll delay-1">
+        <div class="testi-stars">★★★★★</div>
+        <p data-ar="التصميم رائع والتطبيق سهل الاستخدام جداً. مساعد الذكاء الاصطناعي يعطيني نصائح مفيدة كل أسبوع." data-en="The design is gorgeous and the app is very easy to use. The AI assistant gives me useful tips every week." data-fr="Le design est magnifique et l'app très facile. L'assistant IA me donne des conseils utiles chaque semaine.">التصميم رائع والتطبيق سهل الاستخدام جداً. مساعد الذكاء الاصطناعي يعطيني نصائح مفيدة كل أسبوع.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#F59E0B,#D97706);">س</div>
+          <div>
+            <div class="testi-name" data-ar="سارة العمري" data-en="Sara Al-Omari" data-fr="Sara Al-Omari">سارة العمري</div>
+            <div class="testi-role" data-ar="محاسبة — الرياض" data-en="Accountant — Riyadh" data-fr="Comptable — Riyad">محاسبة — الرياض</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card animate-on-scroll delay-2">
+        <div class="testi-stars">★★★★★</div>
+        <p data-ar="الإضافة الصوتية غيّرت حياتي — بدل ما أكتب كل معاملة بقيت بقول 'صرفت مئة جنيه على الأكل' وبيسجلها!" data-en="Voice add changed my life — instead of typing every transaction I just say 'spent 100 pounds on food' and it records it!" data-fr="L'ajout vocal a changé ma vie — au lieu de taper chaque transaction je dis juste 'dépensé 100 livres' et ça l'enregistre!">الإضافة الصوتية غيّرت حياتي — بدل ما أكتب كل معاملة بقيت بقول 'صرفت مئة جنيه على الأكل' وبيسجلها!</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:linear-gradient(135deg,#0A1628,#0F766E);">م</div>
+          <div>
+            <div class="testi-name" data-ar="محمد الخالدي" data-en="Mohamed Al-Khaldi" data-fr="Mohamed Al-Khaldi">محمد الخالدي</div>
+            <div class="testi-role" data-ar="رجل أعمال — دبي" data-en="Businessman — Dubai" data-fr="Homme d'affaires — Dubaï">رجل أعمال — دبي</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── CTA BANNER ───── -->
+<section class="cta-banner">
+  <div class="cta-orb cta-orb1"></div>
+  <div class="cta-orb cta-orb2"></div>
+  <div class="container">
+    <h2 class="cta-title animate-on-scroll" data-ar="جاهز لتتحكم في أموالك؟" data-en="Ready to take control of your finances?" data-fr="Prêt à maîtriser vos finances?">جاهز لتتحكم في أموالك؟</h2>
+    <p class="cta-desc animate-on-scroll delay-1" data-ar="انضم إلى آلاف المستخدمين الذين يديرون أموالهم بذكاء مع تطبيق دخلي" data-en="Join thousands of users managing their money smartly with Dakhly" data-fr="Rejoignez des milliers d'utilisateurs gérant leur argent intelligemment avec Dakhly">انضم إلى آلاف المستخدمين الذين يديرون أموالهم بذكاء مع تطبيق دخلي</p>
+    <div class="cta-actions animate-on-scroll delay-2">
+      <a href="#" class="btn-primary btn-large">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18.5v-13A1.5 1.5 0 0 1 5.03 4.1l9.5 6.5a1.5 1.5 0 0 1 0 2.8l-9.5 6.5A1.5 1.5 0 0 1 3 18.5z"/></svg>
+        <span data-ar="تحميل من Google Play" data-en="Get on Google Play" data-fr="Google Play">تحميل من Google Play</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ───── FOOTER ───── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">د</div>
+          <span data-ar="دخلي" data-en="Dakhly" data-fr="Dakhly">دخلي</span>
+        </div>
+        <p class="footer-tagline" data-ar="ماليتك في متناول يدك" data-en="Your finances at your fingertips" data-fr="Vos finances à portée de main">ماليتك في متناول يدك</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter" class="social-btn">𝕏</a>
+          <a href="#" aria-label="Instagram" class="social-btn">📷</a>
+          <a href="#" aria-label="Facebook" class="social-btn">f</a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4 data-ar="التطبيق" data-en="App" data-fr="Application">التطبيق</h4>
+        <a href="#features" data-ar="المميزات" data-en="Features" data-fr="Fonctionnalités">المميزات</a>
+        <a href="#screens" data-ar="الشاشات" data-en="Screens" data-fr="Écrans">الشاشات</a>
+        </div>
+      <div class="footer-links-group">
+        <h4 data-ar="المساعدة" data-en="Help" data-fr="Aide">المساعدة</h4>
+        <a href="support.html" data-ar="الدعم الفني" data-en="Technical Support" data-fr="Support technique">الدعم الفني</a>
+        <a href="privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy" data-fr="Politique de confidentialité">سياسة الخصوصية</a>
+        <a href="terms.html" data-ar="شروط الاستخدام" data-en="Terms of Use" data-fr="Conditions d'utilisation">شروط الاستخدام</a>
+      </div>
+      <div class="footer-links-group">
+        <h4 data-ar="تواصل معنا" data-en="Contact Us" data-fr="Contactez-nous">تواصل معنا</h4>
+        <a href="mailto:support@dakhly.app">support@dakhly.app</a>
+        <a href="support.html" data-ar="مركز المساعدة" data-en="Help Center" data-fr="Centre d'aide">مركز المساعدة</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-ar="© ٢٠٢٥ دخلي — جميع الحقوق محفوظة" data-en="© 2025 Dakhly — All rights reserved" data-fr="© 2025 Dakhly — Tous droits réservés">© ٢٠٢٥ دخلي — جميع الحقوق محفوظة</p>
+      <div class="footer-bottom-links">
+        <a href="privacy.html" data-ar="الخصوصية" data-en="Privacy" data-fr="Confidentialité">الخصوصية</a>
+        <a href="terms.html" data-ar="الشروط" data-en="Terms" data-fr="Conditions">الشروط</a>
+        <a href="support.html" data-ar="الدعم" data-en="Support" data-fr="Support">الدعم</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
